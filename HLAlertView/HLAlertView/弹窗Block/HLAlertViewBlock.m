@@ -51,7 +51,7 @@
     
     //------- 弹窗主内容 -------//
     self.contentView = [[UIView alloc]init];
-    self.contentView.frame = CGRectMake(0, 0, SCREEN_WIDTH - 80, 300);
+    self.contentView.frame = CGRectMake(0, 0, SCREEN_WIDTH - 80, 150);
     self.contentView.center = self.center;
     self.contentView.backgroundColor = [UIColor whiteColor];
     self.contentView.layer.cornerRadius = 6;
@@ -66,7 +66,7 @@
     
     // message
     UILabel *messageLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 40, self.contentView.width, 22)];
-    messageLable.font = [UIFont boldSystemFontOfSize:20];
+    messageLable.font = [UIFont boldSystemFontOfSize:17];
     messageLable.textAlignment = NSTextAlignmentCenter;
     messageLable.text = self.message;
     [self.contentView addSubview:messageLable];

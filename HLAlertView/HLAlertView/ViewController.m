@@ -15,6 +15,8 @@
 
 #import "HLXibAlertView.h"
 
+#import "PopViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,HLAlertViewDelegate>
 
 @property(nonatomic, strong) UITableView * tableView;
@@ -45,6 +47,10 @@
         case 2:
             cell.textLabel.text = @"xib自定义弹窗";
             break;
+        case 3:
+            cell.textLabel.text = @"透明控制器弹窗";
+            break;
+
         default:
             break;
     }
@@ -52,7 +58,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 4;
 }
 
 #pragma mark - UITableView Delegate
@@ -77,20 +83,26 @@
         }
             break;
             
+        case 3: // 透明控制器弹窗
+        {
+            [self presentClearViewController];
+        }
+            break;
+            
         default:
             break;
     }
 }
 #pragma mark --- delegate回调弹窗
 - (void)alertViewWithDelegate{
-    HLAlertView * alertView = [[HLAlertView alloc] initWithTittle:@"这个是tittle" message:@"这个是message" sureButton:@"确认按钮标题"];
+    HLAlertView * alertView = [[HLAlertView alloc] initWithTittle:@"提示" message:@"这个是通过delegate回调的弹窗" sureButton:@"确认按钮标题"];
     alertView.delegate = self;
     [alertView show];
 }
 
 #pragma mark --- block回调弹窗
 - (void)alertViewWithBlock{
-    HLAlertViewBlock * alertView = [[HLAlertViewBlock alloc] initWithTittle:@"Block" message:@"Blokk" block:^(NSInteger index) {
+    HLAlertViewBlock * alertView = [[HLAlertViewBlock alloc] initWithTittle:@"提示" message:@"通过Block弹窗回调的弹窗" block:^(NSInteger index) {
         if (index == AlertSureButtonClick) {
             [self alertSureButtonClick];
         }else{
@@ -111,6 +123,17 @@
         }
     }];
 }
+
+#pragma mark --- xib弹窗
+- (void)presentClearViewController{
+    PopViewController * popVC = [[PopViewController alloc] init];
+    UIColor * color = [UIColor blackColor];
+    popVC.view.backgroundColor = [color colorWithAlphaComponent:0.85];
+    popVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    [self presentViewController:popVC animated:NO completion:nil];
+}
+
+
 #pragma mark --- HLAlertViewDelegate
 -(void)alertViewDidClickButtonWithIndex:(NSInteger)index{
     if (index == AlertSureButtonClick) {

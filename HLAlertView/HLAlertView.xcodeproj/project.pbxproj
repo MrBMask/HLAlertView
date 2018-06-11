@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A8339220CE1714001F9398 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A8338F20CE1714001F9398 /* PopViewController.m */; };
+		A0A8339320CE1714001F9398 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A8339020CE1714001F9398 /* PopViewController.xib */; };
 		A0D4926720C690BD00BD1D00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D4926620C690BD00BD1D00 /* AppDelegate.m */; };
 		A0D4926A20C690BD00BD1D00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D4926920C690BD00BD1D00 /* ViewController.m */; };
 		A0D4926D20C690BD00BD1D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D4926B20C690BD00BD1D00 /* Main.storyboard */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0A8338F20CE1714001F9398 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		A0A8339020CE1714001F9398 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
+		A0A8339120CE1714001F9398 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		A0D4926220C690BD00BD1D00 /* HLAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D4926520C690BD00BD1D00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0D4926620C690BD00BD1D00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0A8338E20CE16E1001F9398 /* 透明控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				A0A8339120CE1714001F9398 /* PopViewController.h */,
+				A0A8338F20CE1714001F9398 /* PopViewController.m */,
+				A0A8339020CE1714001F9398 /* PopViewController.xib */,
+			);
+			path = "透明控制器";
+			sourceTree = "<group>";
+		};
 		A0D4925920C690BD00BD1D00 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,7 @@
 				A0D492A820C692D100BD1D00 /* 弹窗Block */,
 				A0D492A420C692AF00BD1D00 /* 弹窗delegate */,
 				A0D4929E20C6929200BD1D00 /* xib弹窗 */,
+				A0A8338E20CE16E1001F9398 /* 透明控制器 */,
 				A0D4929D20C6926600BD1D00 /* lib */,
 				A0D4929820C6912200BD1D00 /* Others */,
 			);
@@ -298,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A8339320CE1714001F9398 /* PopViewController.xib in Resources */,
 				A0D4927220C690C100BD1D00 /* LaunchScreen.storyboard in Resources */,
 				A0D492A320C6929200BD1D00 /* HLXibAlertView.xib in Resources */,
 				A0D4926F20C690C100BD1D00 /* Assets.xcassets in Resources */,
@@ -329,6 +346,7 @@
 				A0D4929C20C6923200BD1D00 /* UIView+HLExtension.m in Sources */,
 				A0D492A220C6929200BD1D00 /* HLXibAlertView.m in Sources */,
 				A0D4926A20C690BD00BD1D00 /* ViewController.m in Sources */,
+				A0A8339220CE1714001F9398 /* PopViewController.m in Sources */,
 				A0D492A720C692AF00BD1D00 /* HLAlertView.m in Sources */,
 				A0D4927520C690C100BD1D00 /* main.m in Sources */,
 				A0D4926720C690BD00BD1D00 /* AppDelegate.m in Sources */,
