@@ -100,7 +100,7 @@
     [alertView show];
 }
 
-#pragma mark --- block回调弹窗
+#pragma mark --- xib弹窗
 - (void)alertViewWithXib{
     
     [HLXibAlertView alertWithTittle:@"xib创建" message:@"message内容就是messagemessagemessage啊" block:^(NSInteger index) {

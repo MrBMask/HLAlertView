@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-Gg-gSx">
-                    <rect key="frame" x="30" y="209" width="315" height="250"/>
+                    <rect key="frame" x="30" y="254" width="315" height="160"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n59-AP-7QD">
                             <rect key="frame" x="140" y="20" width="35" height="21"/>
@@ -26,10 +26,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S64-wj-xhN">
-                            <rect key="frame" x="187.5" y="151" width="67.5" height="40"/>
+                            <rect key="frame" x="167.5" y="110" width="127.5" height="40"/>
                             <color key="backgroundColor" red="0.99607843139999996" green="0.47058823529999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="oN8-DI-QYN"/>
+                                <constraint firstAttribute="height" constant="40" id="o70-FI-Fvq"/>
                             </constraints>
                             <state key="normal" title="确认">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,10 +39,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAU-h8-hsX">
-                            <rect key="frame" x="60" y="151" width="67.5" height="40"/>
+                            <rect key="frame" x="20" y="110" width="127.5" height="40"/>
                             <color key="backgroundColor" red="0.87058823529999996" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="wPA-hG-viP"/>
+                                <constraint firstAttribute="height" constant="40" id="JET-Y9-B29"/>
                             </constraints>
                             <state key="normal" title="取消">
                                 <color key="titleColor" red="0.99607843139999996" green="0.47058823529999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +52,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示信息提示信息提示信息提示信息" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ4-NY-w7M">
-                            <rect key="frame" x="60" y="61" width="195" height="41"/>
+                            <rect key="frame" x="30" y="51" width="255" height="41"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -61,18 +61,18 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="n59-AP-7QD" firstAttribute="top" secondItem="pHm-Gg-gSx" secondAttribute="top" constant="20" id="1H7-Wn-hQT"/>
-                        <constraint firstItem="S64-wj-xhN" firstAttribute="height" secondItem="WAU-h8-hsX" secondAttribute="height" id="2xG-mv-rSM"/>
-                        <constraint firstAttribute="trailing" secondItem="S64-wj-xhN" secondAttribute="trailing" constant="60" id="5fR-Xx-ACd"/>
-                        <constraint firstAttribute="height" constant="250" id="BeH-ZN-azc"/>
-                        <constraint firstItem="hJ4-NY-w7M" firstAttribute="leading" secondItem="pHm-Gg-gSx" secondAttribute="leading" constant="60" id="L6Q-0g-KJc"/>
-                        <constraint firstItem="WAU-h8-hsX" firstAttribute="top" secondItem="hJ4-NY-w7M" secondAttribute="bottom" constant="49" id="Nfw-cK-gID"/>
-                        <constraint firstAttribute="trailing" secondItem="hJ4-NY-w7M" secondAttribute="trailing" constant="60" id="WCr-SV-CBW"/>
-                        <constraint firstItem="hJ4-NY-w7M" firstAttribute="top" secondItem="n59-AP-7QD" secondAttribute="bottom" constant="20" id="YxK-Eq-oEd"/>
-                        <constraint firstItem="S64-wj-xhN" firstAttribute="width" secondItem="WAU-h8-hsX" secondAttribute="width" id="Z0B-fi-FL0"/>
-                        <constraint firstItem="S64-wj-xhN" firstAttribute="centerY" secondItem="WAU-h8-hsX" secondAttribute="centerY" id="aJ2-dB-bPF"/>
-                        <constraint firstItem="S64-wj-xhN" firstAttribute="leading" secondItem="WAU-h8-hsX" secondAttribute="trailing" constant="60" id="gec-AD-sJm"/>
+                        <constraint firstItem="S64-wj-xhN" firstAttribute="leading" secondItem="WAU-h8-hsX" secondAttribute="trailing" constant="20" id="8OW-3x-Ya6"/>
+                        <constraint firstAttribute="height" constant="160" id="BeH-ZN-azc"/>
+                        <constraint firstAttribute="bottom" secondItem="S64-wj-xhN" secondAttribute="bottom" constant="10" id="BkC-tJ-4rX"/>
+                        <constraint firstAttribute="trailing" secondItem="S64-wj-xhN" secondAttribute="trailing" constant="20" id="DgA-cV-Ua5"/>
+                        <constraint firstItem="S64-wj-xhN" firstAttribute="height" secondItem="WAU-h8-hsX" secondAttribute="height" id="Gl1-CJ-1aL"/>
+                        <constraint firstItem="hJ4-NY-w7M" firstAttribute="leading" secondItem="pHm-Gg-gSx" secondAttribute="leading" constant="30" id="L6Q-0g-KJc"/>
+                        <constraint firstAttribute="bottom" secondItem="WAU-h8-hsX" secondAttribute="bottom" constant="10" id="QIw-ca-CSd"/>
+                        <constraint firstAttribute="trailing" secondItem="hJ4-NY-w7M" secondAttribute="trailing" constant="30" id="WCr-SV-CBW"/>
+                        <constraint firstItem="hJ4-NY-w7M" firstAttribute="top" secondItem="n59-AP-7QD" secondAttribute="bottom" constant="10" id="YxK-Eq-oEd"/>
+                        <constraint firstItem="WAU-h8-hsX" firstAttribute="leading" secondItem="pHm-Gg-gSx" secondAttribute="leading" constant="20" id="aAs-Oh-SjB"/>
                         <constraint firstItem="n59-AP-7QD" firstAttribute="centerX" secondItem="pHm-Gg-gSx" secondAttribute="centerX" id="hsQ-i1-9rS"/>
-                        <constraint firstItem="WAU-h8-hsX" firstAttribute="leading" secondItem="pHm-Gg-gSx" secondAttribute="leading" constant="60" id="mmZ-ie-d9q"/>
+                        <constraint firstItem="S64-wj-xhN" firstAttribute="width" secondItem="WAU-h8-hsX" secondAttribute="width" id="wN0-Xj-Nly"/>
                     </constraints>
                 </view>
             </subviews>
