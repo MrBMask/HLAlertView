@@ -29,7 +29,23 @@
     [self.view addSubview:self.tableView];
 }
 
-
+- (void)seystemAlertView{
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"message" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"确定");
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
+    UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Tittle" message:@"This is message" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+    [alertView show];
+}
 
 #pragma mark - UITableView DataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -50,7 +66,9 @@
         case 3:
             cell.textLabel.text = @"透明控制器弹窗";
             break;
-
+        case 4:
+            cell.textLabel.text = @"系统弹窗";
+            break;
         default:
             break;
     }
@@ -58,7 +76,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 5;
 }
 
 #pragma mark - UITableView Delegate
@@ -88,7 +106,11 @@
             [self presentClearViewController];
         }
             break;
-            
+        case 4: // 系统
+        {
+            [self seystemAlertView];
+        }
+            break;
         default:
             break;
     }
@@ -126,11 +148,7 @@
 
 #pragma mark --- xib弹窗
 - (void)presentClearViewController{
-    PopViewController * popVC = [[PopViewController alloc] init];
-    UIColor * color = [UIColor blackColor];
-    popVC.view.backgroundColor = [color colorWithAlphaComponent:0.85];
-    popVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    [self presentViewController:popVC animated:NO completion:nil];
+    
 }
 
 
